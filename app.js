@@ -9,6 +9,8 @@ const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
 
 const path = require("path");
+const cors = require('cors')
+app.use(cors())
 const dbPath = path.join(__dirname, "todoApplication.db");
 
 let db = null;
